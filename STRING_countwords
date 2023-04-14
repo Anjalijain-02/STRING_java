@@ -1,0 +1,23 @@
+// count words
+import java.util.*;
+public class Main
+{
+    public static void countwords(String str)
+    {
+        	int c=0;
+		for(int i=0;i<str.length();i++)
+		{
+		   if(str.charAt(i)==' ')
+		   {
+		       c++;
+		   }
+		}
+	System.out.println("no of words is"+(c+1));
+    }
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    String str= sc.nextLine();
+	    countwords(str);
+
+	}
+}
